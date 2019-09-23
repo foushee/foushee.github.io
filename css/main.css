@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/FuturaPTHeavy.otf);
+}
+@font-face {
+    font-family: 'Kurier';
+    src: url(../fonts/Kurier-Regular.otf);
+}
+body {
+    margin: 0;
+    text-align: justify;
+    color: #333;
+    font-family: 'Kurier';
+}
+nav {
+    display: table;
+    width:100%;
+}
+.navbar {
+    background-image: linear-gradient(0deg, transparent, transparent 50%, black 50%, black 53%, transparent 53%, transparent);
+}
+
+nav ul, footer ul {
+    font-family: 'Futura PT', 'Arial', 'Sans-Serif';
+    padding: 5px;
+    list-style: none;
+    font-weight: bold;
+    text-align: right;
+    width: 70%;
+    margin: 16px auto;
+}
+nav > ul > li, footer > ul > li {
+    display: inline;
+    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: -5px;
+    background-color: white;
+}
+nav a {
+    color: #333;
+}
+
+div.container {
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto; 
+}
+div.bibinfo.hidden {
+
+}
+.social { border-top: 1px solid #e8e8e8; margin-top: 50px; padding-top: 20px; }
+.measure { margin: 0 auto; max-width: 42rem; }
+
+.social-icons-left, .social-icons-right { text-align: center; float: none; }
+
+.social-icons { font-size: 1.25rem; padding: 0.5em 0 0 0; width: 100%; }
+
+.social-icons a.fa { cursor: pointer; opacity: 0.8; padding: 0.2em; }
+
+.social-icons a.fa:hover { opacity: 1; }
+
+.social-icons iframe[title=Flattr] { position: relative; top: 0.1em; }
+
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 60%);
+}
+a:hover {
+    text-decoration: none;
+    color: #FF6F61;
+}
+a.active {
+    color: #333;
+}
+
+a.title {
+    font-size:1.5em;
+}
+td.subheading {
+    font-size:1.5em;
+    text-align: left;
+    vertical-align: top;
+}
+img.icon {
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    float: bottom;
+    margin-left: 0px; 
+    margin-right: 0px; 
+    margin-top: 0px; 
+    width: 40px
+}
+
+a.link {
+    font-size:1em;
+    vertical-align: middle;
+}
+
+.cds, .oh, .exp, .cor,  .cc, .ses, .lingrel, .conc, .epist, .sem, .eye, .trans, .rev {
+    -moz-border-radius:5px;
+    border-radius:5px;
+    padding:3px; 
+    margin-bottom:0px; 
+    display: inline-block;
+    font-size:60%;
+    line-height: 12px;
+    position: relative;
+    bottom: 3px;
+
+}
+.cds::before, .oh::before, .exp::before, .cor::before,  .cc::before, .ses::before, .lingrel::before, .conc::before, .epist::before, .sem::before, .eye::before, .trans::before, .trans::before {
+    content: '#';
+}
+.cds::after, .oh::after, .exp::after, .cor::after,  .cc::after, .ses::after, .lingrel::after, .conc::after, .epist::after, .sem::after, .eye::after, .trans::after, .rev::after {
+    white-space: pre;
+}
+.cds {
+    background-color: rgba(154, 151,56, .5);
+}
+.cds::after {
+    content: "child-directed-speech";
+}
+.oh {
+    background-color: rgba(151, 221, 222, .5);
+}
+.oh::after {
+    content: "overhearing";
+}
+.exp {
+    background-color: rgba(213, 215, 23, .6);
+}
+.exp::after {
+    content: "experimental";
+}
+.cor {
+    background-color: rgba(0, 101,107, .4);
+}
+.cor::after {
+    content: "corpus";
+}
+.sem {
+    background-color: rgba(125, 93, 153, .5);
+}
+.sem::after {
+    content:"semantic-dev";
+}
+.lingrel {
+    background-color: rgba(163, 40, 180, .5);
+}
+.lingrel::after {
+    content: "ling-relativity";
+}
+.epist {
+    background-color: rgba(255, 111, 97, .5);
+}
+.epist::after {
+    content:"epistemic-dev";
+}
+.conc {
+    background-color: rgba(252, 158, 33, .5);
+}
+.conc::after {
+    content:"concept-dev";
+}
+.cc {
+    background-color: rgba(220, 121, 62, .5);
+}
+.cc::after {
+    content: "cross-cultural";
+}
+.ses {
+    background-color: rgba(0, 124, 183, .5);
+}
+.ses::after {
+    content: "SES";
+    font-variant: small-caps;
+}
+.trans {
+    background-color: rgba(0, 132, 161,.5);
+}
+.trans::after {
+    content: "translation";
+}
+.rev {
+    background-color: rgba(100, 100,100, .25);
+}
+.rev::after {
+    content: "review";
+}
+.eye {
+    background-color: rgba(238, 109,138, .5)
+}
+.eye::after {
+    content: "eyetracking";
+}
+.extra {
+    background-color: rgba(163, 40, 87, .5);
+}
+.extra2 {
+    background-color: rgba(255, 218, 41, .5);
+}
+span.contacticon { display: block; font-size: 60px; margin: 10px; }
+
+.paper-link {
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-top:2px; 
+    margin-left: 3px;
+    display: inline-block;
+    font-size:80%;
+    position: relative;
+    float:right;
+    background-color: transparent;
+}
+.paper-link::before {
+    content:"(";
+}
+.paper-link::after {
+    content:")";
+}
+
+span.paper-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 8px;
+}
+h1 {
+    font-size: 1.9em;
+    font-family: 'Futura PT', 'Helvetica', 'Arial', 'Sans-Serif';
+    text-transform: uppercase;
+    letter-spacing: 0.18421052631578946em;
+    line-height: 20px;
+    color: #333;
+}
+h1.subheading{
+    font-size: 1.75em;
+    font-family: 'Futura PT', 'Helvetica', 'Arial', 'Sans-Serif';
+    text-transform: lowercase;
+}
+h2{
+    font-size: 1.3em;
+    color: #333;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color: #333;
+    text-align: justify;
+}
+p.pub {
+    font-size: 1em;
+    color: #333;
+    text-align: justify;
+}
+.sc {
+    font-variant: small-caps;
+}
+
+.uc {
+    font-variant: unicase;
+}
+
+ul li, ol li {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+p.citation {
+    font-size: 1em;
+    width: 70%
+}
+table#resources {
+    font-size: .8em;
+}
