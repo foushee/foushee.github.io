@@ -103,7 +103,8 @@ a.link {
     border-radius:5px;
     padding:3px; 
     margin-bottom:0px; 
-    display: inline-block;
+    //display: inline-block;
+    display: none;
     font-size:60%;
     line-height: 12px;
     position: relative;
@@ -203,24 +204,13 @@ a.link {
 }
 span.contacticon { display: block; font-size: 60px; margin: 10px; }
 
-.paper-link {
-    -moz-border-radius:5px;
+.paper-links {
+    float:right;
+    font-size:80%;
     border-radius:5px;
     margin-top:2px; 
     margin-left: 3px;
-    display: inline-block;
-    font-size:80%;
-    position: relative;
-    float:right;
-    background-color: transparent;
 }
-.paper-link::before {
-    content:"(";
-}
-.paper-link::after {
-    content:")";
-}
-
 span.paper-title {
     font-size: 1.1em;
     font-weight: bold;
@@ -254,6 +244,12 @@ p.pub {
     font-size: 1em;
     color: #333;
     text-align: justify;
+}
+p.pub::after {
+    /* This is the clearfix hack -- to make sure any floats inside this element don't overflow vertically */
+    content: "";
+    clear: both;
+    display: table;
 }
 .sc {
     font-variant: small-caps;
