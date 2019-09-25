@@ -92,29 +92,38 @@ img.icon {
     margin-top: 0px; 
     width: 40px
 }
+img.poster-pic {
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    float: bottom;
+    margin-left: 0px; 
+    margin-right: 0px; 
+    margin-top: 0px; 
+    width: 60px
+}
 
 a.link {
     font-size:1em;
     vertical-align: middle;
 }
 
-.cds, .oh, .exp, .cor,  .cc, .ses, .lingrel, .conc, .epist, .sem, .eye, .trans, .rev {
+.cds, .oh, .exp, .cor,  .cc, .ses, .lingrel, .conc, .epist, .sem, .eye, .trans, .rev, .al {
     -moz-border-radius:5px;
     border-radius:5px;
     padding:3px; 
     margin-bottom:0px; 
-    //display: inline-block;
-    display: none;
+    display: inline-block;
+    //display: none;
     font-size:60%;
     line-height: 12px;
     position: relative;
     bottom: 3px;
 
 }
-.cds::before, .oh::before, .exp::before, .cor::before,  .cc::before, .ses::before, .lingrel::before, .conc::before, .epist::before, .sem::before, .eye::before, .trans::before, .trans::before {
+.cds::before, .oh::before, .exp::before, .cor::before,  .cc::before, .ses::before, .lingrel::before, .conc::before, .epist::before, .sem::before, .eye::before, .trans::before, .rev::before, .al::before {
     content: '#';
 }
-.cds::after, .oh::after, .exp::after, .cor::after,  .cc::after, .ses::after, .lingrel::after, .conc::after, .epist::after, .sem::after, .eye::after, .trans::after, .rev::after {
+.cds::after, .oh::after, .exp::after, .cor::after,  .cc::after, .ses::after, .lingrel::after, .conc::after, .epist::after, .sem::after, .eye::after, .trans::after, .rev::after, .al::after {
     white-space: pre;
 }
 .cds {
@@ -196,8 +205,11 @@ a.link {
 .eye::after {
     content: "eyetracking";
 }
-.extra {
+.al {
     background-color: rgba(163, 40, 87, .5);
+}
+.al::after {
+    content: "active-learning";
 }
 .extra2 {
     background-color: rgba(255, 218, 41, .5);
@@ -284,5 +296,5 @@ p.citation {
     width: 70%
 }
 table#resources {
-    font-size: .8em;
+    font-size: 1em;
 }
