@@ -6,6 +6,12 @@
     font-family: 'Kurier';
     src: url(../fonts/Kurier-Regular.otf);
 }
+@font-face {
+    font-family: 'Kurier';
+    font-weight: bold;
+    src: url(../fonts/Kurier-Bold.otf);
+}
+
 body {
     margin: 0;
     text-align: justify;
@@ -225,7 +231,7 @@ span.contacticon { display: block; font-size: 60px; margin: 10px; }
 }
 span.paper-title {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: bolder;
     line-height: 8px;
 }
 h1 {
