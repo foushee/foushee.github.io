@@ -107,7 +107,10 @@ img.poster-pic {
     margin-top: 0px; 
     width: 60px
 }
-
+a.full-pic {
+    -moz-border-radius:10px;
+    border-radius: 10px;
+}
 a.link {
     font-size:1em;
     vertical-align: middle;
