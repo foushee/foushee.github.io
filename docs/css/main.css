@@ -100,23 +100,33 @@ td.subheading {
     vertical-align: top;
     font-weight: bolder;
 }
+tr.entry {
+    font-size:1em;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+}
 img.icon {
     -moz-border-radius:5px;
     border-radius: 5px;
     float: bottom;
-    margin-left: 0px; 
-    margin-right: 0px; 
-    margin-top: 0px; 
-    width: 60px
+    margin: 0px; 
+    width: 60px;
 }
 img.poster-pic {
     -moz-border-radius:5px;
     border-radius: 5px;
-    float: bottom;
+    float: center;
+    position: relative;
     margin-left: 0px; 
     margin-right: 0px; 
     margin-top: 0px; 
-    width: 60px
+    width: 60px;
+}
+img.gallery-foto {
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    width: 90%;
 }
 a.full-pic {
     -moz-border-radius:10px;
@@ -246,6 +256,11 @@ span.contacticon { display: block; font-size: 60px; margin: 10px; }
     margin-top:2px; 
     margin-left: 3px;
 }
+span.img-descript {
+    line-height: 8px;
+    text-align: justify;
+    width: 300px;
+}
 span.paper-title {
     font-size: 1.1em;
     font-weight: bolder;
@@ -262,6 +277,13 @@ span.course-title {
     text-transform: uppercase;
     line-height: 8px;
     text-align: left;
+}
+span.entry-date {
+    font-size: 1em;
+    margin-top: 40px;
+    font-variant: small-caps;
+    margin-right: 20px;
+    font-weight: bolder;
 }
 h1 {
     font-size: 1.9em;
@@ -337,4 +359,11 @@ p.citation {
 }
 table#resources {
     font-size: 1em;
+}
+table#galeria {
+    padding: 5%;
+    border: "0";
+    cellpadding: "0";
+    cellspacing: "0";
+    border-spacing: "0"
 }
