@@ -117,7 +117,6 @@ img.poster-pic {
     -moz-border-radius:5px;
     border-radius: 5px;
     float: center;
-    position: relative;
     margin-left: 0px; 
     margin-right: 0px; 
     margin-top: 0px; 
@@ -127,6 +126,7 @@ img.gallery-foto {
     -moz-border-radius:5px;
     border-radius: 5px;
     width: 90%;
+        position: relative;
 }
 a.full-pic {
     -moz-border-radius:10px;
