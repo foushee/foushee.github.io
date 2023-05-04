@@ -137,7 +137,7 @@ a.link {
     vertical-align: middle;
 }
 
-.cds, .oh, .exp, .cor,  .cc, .ses, .lingrel, .conc, .epist, .sem, .eye, .trans, .rev, .al, .beh {
+.cds, .oh, .exp, .cor,  .cc, .ses, .lingrel, .conc, .epist, .sem, .eye, .trans, .rev, .al, .beh, .int {
     -moz-border-radius:5px;
     border-radius:5px;
     padding:3px; 
@@ -150,17 +150,17 @@ a.link {
     bottom: 3px;
 
 }
-.cds::before, .oh::before, .exp::before, .cor::before,  .cc::before, .ses::before, .lingrel::before, .conc::before, .epist::before, .sem::before, .eye::before, .trans::before, .rev::before, .al::before, .beh::before {
+.cds::before, .oh::before, .exp::before, .cor::before,  .cc::before, .ses::before, .lingrel::before, .conc::before, .epist::before, .sem::before, .eye::before, .trans::before, .rev::before, .al::before, .beh::before, .int::before {
     content: '#';
 }
-.cds::after, .oh::after, .exp::after, .cor::after,  .cc::after, .ses::after, .lingrel::after, .conc::after, .epist::after, .sem::after, .eye::after, .trans::after, .rev::after, .al::after, .beh::after {
+.cds::after, .oh::after, .exp::after, .cor::after,  .cc::after, .ses::after, .lingrel::after, .conc::after, .epist::after, .sem::after, .eye::after, .trans::after, .rev::after, .al::after, .beh::after, .int::after {
     white-space: pre;
 }
 .cds {
     background-color: rgba(154, 151,56, .5);
 }
 .cds::after {
-    content: "child-directed-speech";
+    content: "child-directed-lang";
 }
 .oh {
     background-color: rgba(151, 221, 222, .5);
@@ -246,6 +246,12 @@ a.link {
 }
 .beh::after {
     content: "natural-behavior";
+}
+.int {
+    background-color: rgba(138, 154, 191,.6);
+}
+.int::after {
+    content: "communicative-interaction";
 }
 span.contacticon { display: block; font-size: 60px; margin: 10px; }
 
