@@ -128,6 +128,14 @@ img.gallery-foto {
     width: 90%;
         position: relative;
 }
+img.collab-foto {
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    float: bottom;
+        width: 90%;
+        position: relative;
+}
 a.full-pic {
     -moz-border-radius:10px;
     border-radius: 10px;
@@ -221,7 +229,7 @@ a.link {
     background-color: rgba(255, 218, 41, .5);
 }
 .trans::after {
-    content: "translation";
+    content: "translational";
 }
 .rev {
     background-color: rgba(100, 100,100, .25);
@@ -291,6 +299,13 @@ span.entry-date {
     margin-right: 20px;
     font-weight: bolder;
 }
+span.name{
+    font-family: 'Futura PT', 'Arial', 'Sans-Serif';
+    font-size: .6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: right;
+}
 h1 {
     font-size: 1.9em;
     font-family: 'Futura PT', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -319,6 +334,14 @@ p {
     line-height: 1.3em;
     color: #333;
     text-align: justify;
+}
+p.collaborator {
+    line-height: 50%;
+    color: #333;
+    text-align: center;
+    width:  90%;
+    height: 10%;
+    margin: 0px;
 }
 p.pub {
     font-size: 1em;
@@ -372,4 +395,8 @@ table#galeria {
     cellpadding: "0";
     cellspacing: "0";
     border-spacing: "0"
+}
+h2.highlight-title {
+    line-height: 1;
+    margin-bottom: 1rem;
 }
